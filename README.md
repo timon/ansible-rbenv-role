@@ -232,6 +232,15 @@ Dependencies
 
 none
 
+Known issues
+------------
+
+When running on Debian with system-wide install, rbenv won't work from
+`sudo -s` shells. If you need rbenv commands within sudo shells, use `sudo -i`.
+This will launch login shell that will read the rbenv configuration snippet
+from `/etc/profile.d/rbenv.sh` (alternatively, you can manually source that
+file from `sudo -s` shell).
+
 License
 -------
 
