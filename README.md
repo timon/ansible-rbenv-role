@@ -241,6 +241,12 @@ This will launch login shell that will read the rbenv configuration snippet
 from `/etc/profile.d/rbenv.sh` (alternatively, you can manually source that
 file from `sudo -s` shell).
 
+Ruby prior to 2.3 link to openssl 1.0, which is not present on modern Debian.
+Starting with ruby 2.3, you can use gem version of openssl, which could be
+linked against openssl 1.1. If you want to install older rubies on debian,
+you'll have to override `libssl_dev_pkg` to be `libssl1.0-dev` (or install
+openssl1.0 separately).
+
 License
 -------
 
