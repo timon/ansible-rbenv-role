@@ -67,7 +67,7 @@ rbenv_apt_packages:
   - libcurl4-openssl-dev
   - libffi-dev
   - libreadline-dev
-  - "{{ libssl_dev_pkg | default("libssl-dev") }}"
+  - "{{ libssl_dev_pkg | default('libssl-dev') }}"
   - libxml2-dev
   - libxslt1-dev
   - patch
